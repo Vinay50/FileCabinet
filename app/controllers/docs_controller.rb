@@ -1,7 +1,23 @@
 class DocsController < ApplicationController
 
-	def new
+	def index
+		@docs = Doc.all
 	end
+
+	def new
+		@doc = Doc.new
+	end
+
+  def show
+    find_docs
+  end	
+
+  def edit
+  	find_docs
+  end
+
+  def update
+  end
 
 	def create
 		@doc = Doc.new(docs_params)
@@ -13,10 +29,6 @@ class DocsController < ApplicationController
 		  render "new"
 		end  
 	end
-
-  def show
-    find_docs
-  end	
 
 
 	private
