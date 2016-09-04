@@ -1,0 +1,19 @@
+<div class ="col-md-6 col-md-offset-3 doc-header">
+  <div class="panel panel-default">
+    <div class="panel-heading text-center header-text">Sign in</div>
+	  <div class="panel-body">
+			<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+			  <%= f.error_notification %>
+			  <div class="form-inputs">
+			    <%= f.input :email, autofocus: true %>
+			    <%= f.input :password%>
+			    <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
+			  </div>
+			  <div class="form-actions">
+			    <%= f.button :submit, "Log in", :class => "btn btn-info" %>
+			  </div>
+			<% end %>
+		</div>	
+	</div>
+	<%= render "devise/shared/links" %>
+</div>

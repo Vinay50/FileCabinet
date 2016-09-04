@@ -1,3 +1,10 @@
-<%= @doc.title %>
-<%= @doc.body %>
-<%= link_to "Fix IT", edit_doc_path(@doc) %>
+<div class ="col-md-8 col-md-offset-2 doc-header">
+  <h2><%= @doc.title %></h2></br>
+  <div class ="show-doc" >
+  <%= @doc.body %></br>
+  </div>
+  <div class ="show-doc" >
+    <%= link_to "Edit Story", edit_doc_path(@doc), {:style => "margin-top: 5% "} %></br>
+    <%= link_to "Back", :back %>
+  </div>
+</div>

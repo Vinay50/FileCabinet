@@ -1,16 +1,27 @@
 <div class ="col-md-8 col-md-offset-2 doc-header">
- <h3>Add new doc</h3>
-<%= simple_form_for @doc do |f| %>
-  <div class ="form-group" >
-    <%= f.label :title %>
-    <%= f.text_field :title, :class => "form-control" %>
-  </div>
-  <div class ="form-group" >
-    <%= f.label :body %>
-    <%= f.text_area :body, :class => "form-control" %>
-  </div>
-  <div class ="form-group" >
-    <%= f.button :submit, :class => "btn btn-info" %>
-  </div>
-<% end %>
+  <h3>New Story</h3>
+  <%= form_for @doc do |f| %>
+    <% if @doc.errors.any? %>
+      <div class="errors">
+        <h4>Please review the problems below:</h4>
+        <ul>
+          <% @doc.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>  
+    <% end %> 
+
+    <div class ="form-group" >
+      <%= f.label :title %>
+      <%= f.text_field :title, :class => "form-control" %>
+    </div>
+    <div class ="form-group" >
+      <%= f.label :body %>
+      <%= f.text_area :body, :class => "form-control article-text-area" %>
+    </div>
+    <div class ="form-group" >
+      <%= f.button :submit, :class => "btn btn-info" %>
+    </div>
+  <% end %>
 </div>

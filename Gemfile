@@ -23,6 +23,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'pry-byebug'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'

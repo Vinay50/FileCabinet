@@ -1,4 +1,9 @@
-<% @docs.each do |doc| %>
-  <%= doc.title %>
-  <%= doc.body %>
-<% end %>
+<div class ="col-md-8 col-md-offset-2 doc-header">
+  <h3>Stories</h3>
+	<% @docs.each do |doc| %>
+		 <%= link_to doc.title, doc_path(doc) %></br>
+		 <%= truncate(doc.body, length:50) %></br>
+	<% end %></br>
+	<%= link_to "Create Doc", new_doc_path %>
+</div>
+

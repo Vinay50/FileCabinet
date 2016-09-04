@@ -1,0 +1,55 @@
+.devise-border{
+	border: 1px solid #6495ED;
+}
+.navbar-inverse {
+    background-color: #6495ED  ;
+    border-color: #6495ED;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #6495ED;
+    color: white;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+.panel-default > .panel-heading {
+    background-color: #6495ED;
+    border-color: #dddddd;
+    color: #fff;
+}
+.show-doc{
+	margin-top: 3%
+}
+.article-text-area{
+  min-height:200px;
+}
+.errors{
+ color: red;    
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: white;
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: white;
+}
+.navbar-right {
+    float: right !important;
+}
+.navbar-nav > li > .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+    margin-right: 6%;
+}
+.btn-info, .btn-info:hover, .btn-info:focus,.btn-info:visited{
+    background-color: #edbc64;
+    border-color: #edbc64;
+    color: white;
+}
+.header-text{
+    font-size:18px;
+}
